@@ -15,9 +15,9 @@ pipeline {
     stage('Example') {
       steps {
         echo 'Hello World!'
-	echo "Trying: $(params.door_choice)"
-	echo "We can dance: $(params.CAN_DANCE)"
-	echo "The DJ says: $(params.sTrAnGePaRaM)"
+	echo "Trying: ${params.door_choice}"
+	echo "We can dance: ${params.CAN_DANCE}"
+	echo "The DJ says: ${params.sTrAnGePaRaM}"
       }
     }
   }
