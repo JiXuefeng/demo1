@@ -2,7 +2,7 @@ pipeline {
   agent any
   parameters {
     choice(name: 'door_choice',
-      choices: 'one \n two \n three \n four',
+      choices: 'one\ntwo\nthree\nfour',
       description: 'What door do you choose?')
     booleanParam(name: 'CAN_DANCE',
       defaultValue: true,
